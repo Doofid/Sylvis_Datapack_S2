@@ -1,0 +1,20 @@
+id: 'sylvis:enchanter_loyalty'
+vanilla_item: 'minecraft:enchanted_book'
+behaviour:
+  item_interact_execute:
+    consumes: true
+    command: execute if items entity @s weapon.offhand sylvis:topaz_claymore run item modify entity @s weapon.offhand sylvis:add_loyalty
+    # command: 'item modify entity @s weapon.offhand sylvis:add_loyalty'
+properties:
+  stack_size: 1
+  fire_resistant: true
+  copy_components: false
+components:
+  'minecraft:custom_name':
+    - bold: true
+      color: '#FF6600'
+      text: 'Loyalty III'
+  'minecraft:lore':
+    - text: To be used to enchant the Topaz Claymore
+    - text: hold the Claymore in your offhand
+    - text: and right click the Book in your mainhand

@@ -1,0 +1,38 @@
+id: 'sylvis:candy'
+vanilla_item: 'minecraft:resin_brick'
+behaviour: {}
+properties:
+  stack_size: 32
+  fire_resistant: false
+  copy_components: false
+components:
+  'minecraft:consumable':
+    consume_seconds: 5
+    animation: eat
+    has_consume_particles: true
+    on_consume_effects:
+      - type: 'minecraft:apply_effects'
+        effects:
+          - id: 'minecraft:speed'
+            amplifier: 3
+            duration: 800
+            ambient: true
+            show_particles: false
+            show_icon: true
+            hidden_effect:
+              id: 'minecraft:luck'
+              amplifier: 1
+              duration: 5
+              ambient: false
+              show_particles: false
+              show_icon: false
+        probability: 1
+  'minecraft:custom_name':
+    text: Candy Bar
+    type: text
+    shadow_color: 16120065
+    bold: true
+  'minecraft:lore':
+    - text: BIG ASS CANDY BAR
+      type: text
+      shadow_color: 4933961

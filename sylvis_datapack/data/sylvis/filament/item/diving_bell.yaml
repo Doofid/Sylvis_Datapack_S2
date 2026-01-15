@@ -1,0 +1,26 @@
+id: 'sylvis:diving_bell'
+vanilla_item: 'minecraft:glass'
+properties:
+  durability: 165
+  stack_size: 1
+  fire_resistant: false
+  copy_components: false
+components:
+  'minecraft:equippable':
+    slot: head
+    allowed_entities: 'minecraft:player'
+    dispensable: true
+    swappable: true
+    damage_on_hurt: true
+    equip_on_interact: false
+    can_be_sheared: false
+  'minecraft:custom_name':
+    text: Diving Bell
+    type: text
+    color: '#FF6F00'
+    bold: true
+  'minecraft:lore':
+    - text: Best used under water
+
+  'minecraft:enchantments':
+    'minecraft:mending': 1

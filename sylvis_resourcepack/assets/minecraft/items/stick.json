@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/stick"
+    },
+    "cases": [
+      {
+        "when": "cat_ears",
+        "model": {
+          "type": "model",
+          "model": "item/cat_ears"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+id: 'sylvis:harvest_scythe'
+vanilla_item: 'minecraft:netherite_hoe'
+behaviour:
+  hoe: {}
+properties:
+  stack_size: 1
+  fire_resistant: true
+  copy_components: true
+components:
+  'minecraft:custom_name':
+    - bold: true
+      color: '#FF6F00'
+      text: '['
+    - bold: true
+      color: '#FF6F00'
+      text: H
+    - bold: true
+      color: '#FF6F00'
+      text: a
+    - bold: true
+      color: '#FF6F00'
+      text: r
+    - bold: true
+      color: '#FF6F00'
+      text: v
+    - bold: true
+      color: '#FF6F00'
+      text: e
+    - bold: true
+      color: '#FF6F00'
+      text: s
+    - bold: true
+      color: '#FF6F00'
+      text: 't '
+    - bold: true
+      color: '#FF6F00'
+      text: S
+    - bold: true
+      color: '#FF6F00'
+      text: c
+    - bold: true
+      color: '#FF6F00'
+      text: 'y'
+    - bold: true
+      color: '#FF6F00'
+      text: t
+    - bold: true
+      color: '#FF6F00'
+      text: h
+    - bold: true
+      color: '#FF6F00'
+      text: e
+    - bold: true
+      color: '#FF6F00'
+      text: ']'
+  'minecraft:lore':
+    - text: The best scythe to get
+    - text: some harvesting done!
+  'minecraft:tool':
+    rules: []
+
+  'minecraft:enchantments':
+    'minecraft:mending': 1

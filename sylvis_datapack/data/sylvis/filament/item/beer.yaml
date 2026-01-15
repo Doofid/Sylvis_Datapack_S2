@@ -1,0 +1,44 @@
+id: 'sylvis:beer'
+translations:
+  en_us: strong beer
+vanilla_item: 'minecraft:glass_bottle'
+item_tags: []
+behaviour:
+  item_interact_execute:
+    consumes: true
+    commands: 
+      - tellraw @s "Time to get black out drunk"
+      - effect give @s minecraft:blindness 2 3 false
+      - particle dust{color:[0.28,0.62,0.0],scale:2} ^ ^1.5 ^ 0.2 0.2 0.2 0.0001 25 force
+      - damage @s 5 minecraft:bad_respawn_point by @s
+      - effect give @s minecraft:nausea 60 2 false
+      - effect give @s minecraft:saturation 350 2 false
+      - effect give @s minecraft:weakness 60 2 false
+      - effect give @s minecraft:mining_fatigue 60 2 false
+      - effect give @s minecraft:slowness 30 1 false
+
+properties:
+  stack_size: 6
+  lore:
+    - Black out drunk, let's fucking go
+  fire_resistant: true
+  copy_components: false
+
+components: 
+  'minecraft:custom_name':
+    text: Stark Bier
+    type: text
+    extra: []
+    color: gold
+    shadow_color: 6821912
+    font: 'minecraft:default'
+    bold: true
+    italic: false
+    underlined: true
+    strikethrough: false
+    obfuscated: false
+
+  'minecraft:custom_model_data':
+    strings:
+      - beer
+

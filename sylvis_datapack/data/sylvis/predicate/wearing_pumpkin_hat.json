@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": ["sylvis:pumpkin_hat"],
+        "count": 1,
+        "predicates": {
+          "minecraft:custom_data": {
+            "saturation_hat": true
+          }
+        }
+      }
+    }
+  }
+}

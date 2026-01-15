@@ -1,0 +1,31 @@
+id: 'sylvis:unicorn_fly'
+vanilla_item: 'minecraft:end_rod'
+properties:
+    durability: 500
+    stack_size: 1
+    fire_resistant: true
+    copy_components: false
+components:
+    'minecraft:glider': {}
+    'minecraft:equippable':
+        slot: head
+        allowed_entities: 'minecraft:player'
+        dispensable: true
+        swappable: true
+        damage_on_hurt: false
+        equip_on_interact: false
+        can_be_sheared: false
+    'minecraft:custom_name':
+      text: UNICORN HORN
+      type: text
+      color: '#ece509'
+      bold: true
+    'minecraft:lore':
+      - text: '- I believe I can fly'
+        type: text
+        color: '#e725ab'
+        italic: true
+        underlined: true
+
+    'minecraft:enchantments':
+      'minecraft:mending': 1

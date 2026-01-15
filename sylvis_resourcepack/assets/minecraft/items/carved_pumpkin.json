@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "block/carved_pumpkin"
+    },
+    "cases": [
+      {
+        "when": "cat_ears",
+        "model": {
+          "type": "model",
+          "model": "item/cat_ears"
+        }
+      },
+      {
+        "when": "cat_ears_high",
+        "model": {
+          "type": "model",
+          "model": "item/cat_ears_high"
+        }
+      }
+    ]
+  }
+}

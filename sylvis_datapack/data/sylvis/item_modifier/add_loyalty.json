@@ -1,0 +1,7 @@
+{
+  "function": "minecraft:set_enchantments",
+  "enchantments": {
+    "minecraft:loyalty": 3
+  },
+  "conditions": []
+}

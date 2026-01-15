@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      "minecraft:sugar"
+    ],
+    "B": [
+      "minecraft:resin_clump"
+    ]
+  },
+  "result": {
+    "id": "sylvis:candy",
+    "count": 1
+  },
+  "show_notification": true
+}

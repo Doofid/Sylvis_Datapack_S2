@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/glass_bottle"
+    },
+    "cases": [
+      {
+        "when": "beer",
+        "model": {
+          "type": "model",
+          "model": "item/beer"
+        }
+      },
+      {
+        "when": "red_wine",
+        "model": {
+          "type": "model",
+          "model": "item/red_wine"
+        }
+      },
+      {
+        "when": "coffee",
+        "model": {
+          "type": "model",
+          "model": "item/black_coffee"
+        }
+      }
+    ]
+  }
+}

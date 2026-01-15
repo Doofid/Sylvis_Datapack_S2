@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "test",
+  "category": "misc",
+  "pattern": [
+    "ABA",
+    "ABA",
+    "ABA"
+  ],
+  "key": {
+    "A": [
+      "minecraft:paper"
+    ],
+    "B": [
+      "minecraft:gunpowder"
+    ]
+  },
+  "result": {
+    "id": "sylvis:zigarette",
+    "count": 8
+  },
+  "show_notification": true
+}

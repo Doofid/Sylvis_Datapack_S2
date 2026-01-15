@@ -1,0 +1,35 @@
+id: 'sylvis:emotional_support_brick'
+vanilla_item: 'minecraft:brick'
+item_tags: []
+properties:
+    stack_size: 1
+    lore: []
+    fire_resistant: true
+    copy_components: true
+components:
+    'minecraft:death_protection':
+        death_effects:
+            -
+                type: 'minecraft:teleport_randomly'
+                diameter: 25
+    'minecraft:lore':
+        -
+          text: "You feel a strange warmth and a sense of security coming" 
+          color: '#5e9899'
+          italic: true
+          underlined: true
+        -
+          text: "from this brick. You feel like it'll keep you safe even in"
+          color: '#5e9899'
+          italic: true
+          underlined: true
+        -
+          text: "your darkest times."
+          color: '#5e9899'
+          italic: true
+          underlined: true
+    'minecraft:custom_name':
+        text: Emotional Support Brick
+        color: '#ffea00'
+        bold: true
+        underlined: true

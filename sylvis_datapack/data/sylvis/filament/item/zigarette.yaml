@@ -1,0 +1,51 @@
+id: 'sylvis:zigarette'
+translations:
+  en_us: zigarette
+vanilla_item: 'minecraft:bone'
+item_tags: []
+behaviour:
+  item_interact_execute:
+    consumes: true
+    commands: 
+      - tellraw @s "Finally a much needed break"
+      - effect give @s minecraft:blindness 2 1 false
+      - particle minecraft:campfire_cosy_smoke ^ ^1.5 ^ 0.2 0.2 0.2 0.0001 25 normal
+      - damage @s 5 minecraft:bad_respawn_point by @s
+      - effect give @s minecraft:poison 3 2 false
+      - effect give @s minecraft:nausea 10 2 false
+      - effect give @s minecraft:glowing 5 1 false
+      - effect give @s minecraft:saturation 150 2 false
+properties:
+  stack_size: 16
+  lore:
+    - have a nice break once in a while
+  fire_resistant: true
+  copy_components: false
+
+components: 
+  'minecraft:custom_name':
+    text: Zigarette
+    type: text
+    extra: []
+    color: gold
+    shadow_color: 6821912
+    font: 'minecraft:default'
+    bold: true
+    italic: false
+    underlined: true
+    strikethrough: false
+    obfuscated: false
+
+  'minecraft:custom_model_data':
+    strings:
+      - zigarette
+
+  'minecraft:equippable':
+    slot: head
+    allowed_entities: 'minecraft:player'
+    dispensable: false
+    swappable: false
+    damage_on_hurt: false
+    equip_on_interact: false
+    can_be_sheared: false
+

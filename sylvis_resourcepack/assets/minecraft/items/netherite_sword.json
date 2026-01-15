@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/netherite_sword"
+    },
+    "cases": [
+      {
+        "when": "topaz_claymore",
+        "model": {
+          "type": "model",
+          "model": "item/topaz_claymore"
+        }
+      },
+	  {
+        "when": "better_topaz_claymore",
+        "model": {
+          "type": "model",
+          "model": "item/better_topaz_claymore"
+        }
+      }
+    ]
+  }
+}

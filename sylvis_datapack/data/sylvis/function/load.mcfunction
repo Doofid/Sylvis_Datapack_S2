@@ -1,0 +1,1 @@
+schedule function sylvis:tick 1s

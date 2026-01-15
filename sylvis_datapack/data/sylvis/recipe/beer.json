@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    " B "
+  ],
+  "key": {
+    "A": [
+      "minecraft:wheat"
+    ],
+    "B": [
+      "minecraft:glass_bottle"
+    ]
+  },
+  "result": {
+    "id": "sylvis:beer",
+    "count": 1
+  },
+  "show_notification": true
+}

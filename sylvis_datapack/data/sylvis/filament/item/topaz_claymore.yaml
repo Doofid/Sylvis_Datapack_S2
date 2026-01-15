@@ -1,0 +1,49 @@
+id: 'sylvis:topaz_claymore'
+vanilla_item: 'minecraft:netherite_sword'
+behaviour:
+  trident: {}
+  # item_interact_execute:
+  #   consumes: false
+  #   command: item modify entity @s weapon.mainhand sylvis:add_loyalty
+properties:
+  durability: 2031
+  stack_size: 1
+  fire_resistant: true
+  copy_components: true
+components:
+  'minecraft:attribute_modifiers':
+    - type: 'minecraft:attack_speed'
+      id: 'sylvis:topaz_claymmore_id'
+      amount: -3.5
+      operation: add_value
+      slot: mainhand
+    - type: 'minecraft:attack_damage'
+      id: 'sylvis:topaz_claymmore_id'
+      amount: 10
+      operation: add_value
+      slot: mainhand
+    - type: 'minecraft:entity_interaction_range'
+      id: 'sylvis:topaz_claymmore_id'
+      amount: 3
+      operation: add_value
+      slot: mainhand
+      display:
+        type: default
+  'minecraft:weapon':
+    item_damage_per_attack: 1
+    disable_blocking_for_seconds: 5
+  'minecraft:custom_name':
+    - bold: true
+      color: '#FF6600'
+      text: 'Topaz Claymore'
+  'minecraft:lore':
+    - text: One BIG ASS Sword
+    - text: can be used as a Sword
+    - text: or as a Trident
+
+  'minecraft:custom_model_data':
+    strings:
+      - better_topaz_claymore
+
+  'minecraft:enchantments':
+    'minecraft:mending': 1

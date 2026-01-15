@@ -1,0 +1,26 @@
+id: 'sylvis:cat_ears'
+vanilla_item: 'minecraft:carved_pumpkin'
+properties:
+  durability: 500
+  stack_size: 1
+  fire_resistant: false
+  copy_components: false
+components:
+  'minecraft:equippable':
+    slot: head
+    allowed_entities: 'minecraft:player'
+    dispensable: true
+    swappable: true
+    damage_on_hurt: true
+    equip_on_interact: false
+    can_be_sheared: false
+  'minecraft:custom_name':
+    text: Cat Ears
+    type: text
+    color: '#FF6F00'
+    bold: true
+  'minecraft:lore':
+    - text: I guess you are the cutes now
+  'minecraft:custom_model_data':
+    strings:
+      - cat_ears
